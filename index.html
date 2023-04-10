@@ -17,12 +17,18 @@
             <div>
                 Número:
                 <input type="number" id="number" name="number" />
-                <input type="button" value="Gerar Tabuada" onclick="contar()" />
+                <input
+                    type="button"
+                    value="Gerar Tabuada"
+                    onclick="tabuada()"
+                />
             </div>
             <div>
                 <select name="result" required="requered" multiple size="10">
                     <option value="">Digite um número acima</option>
                 </select>
+
+                <div id="answer" style="display: inline"></div>
             </div>
         </section>
         <footer>
