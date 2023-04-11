@@ -1,19 +1,22 @@
 function tabuada(){
-    let number = window.document.getElementById('number')
-    let answer = document.getElementById('answer')
-    let tabuada = ''
-    
-    for(let count = 1; count > 0 ; count++){
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+    if(num.value.length == 0){
+         window.alert('Por favor, digite um número!')
+    } else{
+       let n = Number(num.value)
+       let c = 1
+       while(c <= 10){
 
-        tabuada += number+ "x" +count+ "=" +number*count+ "</br>";
+        let item = document.createElement('option')
+        item.text = `${n} x ${c} = ${n*c}`
+        tab.appendChild(item)
+        c++
 
-        answer.innerHTML = tabuada;
-
-        
-
-
+       }
     }
-    
 
+    
+   
 }
 

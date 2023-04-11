@@ -8,28 +8,23 @@
         <link rel="stylesheet" href="estilo.css" />
     </head>
 
-    <body id="container" onload="contar()">
+    <body id="container">
         <header>
             <h1>Tabuada</h1>
             <!--Usar o select-->
         </header>
         <section>
             <div>
-                Número:
-                <input type="number" id="number" name="number" />
-                <input
-                    type="button"
-                    value="Gerar Tabuada"
-                    onclick="tabuada()"
-                />
+                <p>Número: <input type="number" name="num" id="txtn"/>
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()"/> </p>
             </div>
             <div>
-                <select name="result" required="requered" multiple size="10">
-                    <option value="">Digite um número acima</option>
+                <select name="tabuada" id="seltab" size="10">
+
                 </select>
 
-                <div id="answer" style="display: inline"></div>
-            </div>
+                
+         
         </section>
         <footer>
             <p>&copy; CursoemVideo</p>
